@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-color: rgba(11, 201, 4, 0.918);
+    --secondary-color: linear-gradient(to right, rgba(6, 187, 0, 0.95), rgba(157, 255, 154, 0.8));
+    --tertiary-color: rgba(247, 247, 247, 0.5);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+
+}
+.card-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.card {
+    padding: 20px 10px;
+    margin: 10px;
+    height: 225px;
+    width: 20%;
+    border: 1px solid var(--main-color);
+}
+.icon {
+    color: var(--main-color);
+    font-size: 40px;
+}
+.title-holder {
+    margin: 8px 0;
+}
+.card:hover {
+    transform: scale(1.05);
+    background: var(--secondary-color);
+
+    .color-changer, .icon {        
+        color: white;
+        transition: 0.3s 0.2s;
+    }
+
+}
